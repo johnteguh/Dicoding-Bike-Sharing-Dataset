@@ -32,6 +32,8 @@ min_date = df["dteday"].min()
 max_date = df["dteday"].max()
 
 
+st.header('Bike Sharing Dataset')
+
 with st.sidebar:
     genre = st.selectbox(
         label="What Distribution do you want to see?",
