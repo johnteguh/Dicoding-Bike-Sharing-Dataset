@@ -21,7 +21,8 @@ def perhari (df,mulai,akhir):
     filtered_daily_cnt = daily_cnt.loc[(daily_cnt.index >= mulai) & (daily_cnt.index <= akhir)]
     return filtered_daily_cnt
 
-df = pd.read_csv("https://raw.githubusercontent.com/johnteguh/Dicoding-Bike-Sharing-Dataset/a998d03901b2f85ff063c7a085d727459247a266/fixed_days.csv")
+# df = pd.read_csv("https://raw.githubusercontent.com/johnteguh/Dicoding-Bike-Sharing-Dataset/a998d03901b2f85ff063c7a085d727459247a266/fixed_days.csv")
+df = pd.read_csv("fixed_days.csv")
 print(df)
 start_date = df["dteday"].min()
 end_date = df["dteday"].max()
